@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Yamba2_Gr4</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Mtweet">Tweet</string>
+    <string name="action_tweet">Tweet</string>
+    <string name="about">about</string>
+    <string name="titleUsername">Username</string>
+    <string name="summaryUsername">Please enter your username</string>
+    <string name="titlePassword">Password</string>
+    <string name="summaryPassword">Please enter your password</string>
+    <string name="titleApiRoot">API Root</string>
+    <string name="summaryApiRoot">URL of Root API for your service</string>
+    <string name="title_activity_settings_activity">settings_activity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="purge">Purge</string>
+    <string name="status_button_tweet">Tweet</string>
+    <string name="status_text_hint">What\'s happening?</string>
+    <string name="username">User name</string>
+    <string name="username_summary">What\'s your user name?</string>
+    <string name="password">Password</string>
+    <string name="password_summary">How do you log in?</string>
+    <string name="status_update">Status Update</string>
+    <string name="interval">Refresh Interval</string>
+    <string name="interval_summary">How frequently should data refresh?</string>
+    <string name="title_activity_about_activity">about_activity</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

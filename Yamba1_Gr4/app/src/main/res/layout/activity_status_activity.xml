@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".status_activity"
+    android:background="#1d000000">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tweet"
+        android:id="@+id/buttonTweet"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/editStatus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ff000000"
+        android:textSize="20dp"
+        android:typeface="normal"
+        android:width="120dp"
+        android:drawableRight="@drawable/pen43"
+        android:background="#ff69d4ff"
+        android:height="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editStatus"
+        android:layout_below="@+id/textCount"
+        android:layout_alignRight="@+id/buttonTweet"
+        android:layout_alignEnd="@+id/buttonTweet"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:lines="3"
+        android:autoText="false"
+        android:background="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textCount"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textIsSelectable="false"
+        android:singleLine="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post a new tweet"
+        android:id="@+id/textView2"
+
+        android:background="#2aadd1ff"
+        android:width="800dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/textCount"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#7a000000" />
+
+</RelativeLayout>
