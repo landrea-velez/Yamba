@@ -13,8 +13,13 @@
         android:showAsAction="always|withText"
         android:title="@string/action_tweet"/>
     <item
-        android:id="@+id/about"
+        android:id="@+id/About"
         android:icon="@android:drawable/ic_menu_delete"
-        android:title="@string/about">
+        android:title="@string/About">
+    </item>
+    <item
+        android:id="@+id/itemServiceStart"
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:title="@string/Refresh">
     </item>
 </menu>
