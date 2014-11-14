@@ -2,24 +2,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="yamba.gr4.compumovil.udea.edu.co.yamba2_gr4.MainActivity" >
 
-   <item
-        android:id="@+id/Mtweet"
+    <item
+        android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/Mtweet"/>
+        android:title="@string/action_settings"/>
     <item
         android:id="@+id/action_tweet"
         android:icon="@android:drawable/ic_menu_add"
         android:showAsAction="always|withText"
-        android:title="@string/action_tweet"/>
+        android:title="@string/tweet"/>
     <item
-        android:id="@+id/About"
-        android:icon="@android:drawable/ic_menu_delete"
-        android:title="@string/About">
-    </item>
-    <item
-        android:id="@+id/itemServiceStart"
+        android:id="@+id/action_refresh"
         android:icon="@android:drawable/ic_menu_rotate"
-        android:title="@string/Refresh">
+        android:showAsAction="always"
+        android:title="@string/refresh"/>
+    <item
+        android:id="@+id/action_purge"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="@string/purge">
     </item>
 </menu>

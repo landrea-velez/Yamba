@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -28,24 +29,51 @@ public class MainActivity extends Activity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         switch (item.getItemId()) {
-            case R.id.Mtweet:
-                startActivity(new Intent(this, SettingsActivity.class));
-                break;
+            /*
+            case R.id.action_tweet:
+                startActivity(new Intent(
+                        "yamba.gr4.compumovil.udea.edu.co.yamba2_gr4.SettingsActivity"));
+                return true;*/
             case R.id.action_tweet:
                 startActivity(new Intent(this, SettingsActivity.class));
-                break;
-            case R.id.About:
-                startActivity(new Intent(this, PrefsActivity.class));
-                break;
-            case R.id.itemServiceStart:
+                return true;
+            case R.id.action_refresh:
                 startService(new Intent(this, RefreshService.class));
-                break;
+                return true;
+            case R.id.action_purge:
+                int rows = getContentResolver().delete(
+                        StatusContract.CONTENT_URI, null, null);
+                Toast.makeText(this, "Deleted " + rows + " rows",
+                        Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.action_settings:
+                startActivity(new Intent(this, PrefsActivity.class));
+                return true;
             default:
-            return false;
+                return false;
         }
-        return true;
     }
 }
 
 
 
+
+/*
+        switch (item.getItemId()) {
+        case R.id.Mtweet:
+        startActivity(new Intent(this, SettingsActivity.class));
+        break;
+        case R.id.action_tweet:
+        startActivity(new Intent(this, SettingsActivity.class));
+        break;
+        case R.id.About:
+        startActivity(new Intent(this, PrefsActivity.class));
+        break;
+        case R.id.itemServiceStart:
+        startService(new Intent(this, RefreshService.class));
+        break;
+default:
+        return false;
+        }
+        return true;
+        }*/

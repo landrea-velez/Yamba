@@ -31,19 +31,22 @@
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/Mtweet" >
+            android:label="@string/action_settings" >
         </activity>
         <activity
             android:name=".PrefsActivity"
             android:label="@string/title_activity_about_activity" >
         </activity>
 
+        <activity android:name="yamba.gr4.compumovil.udea.edu.co.yamba2_gr4.DetailsActivity" >
+        </activity>
+
     </application>
 
 </manifest>
+

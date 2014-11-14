@@ -1,8 +1,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="yamba.gr4.compumovil.udea.edu.co.yamba2_gr4.settings_activity" >
-    <item android:id="@+id/Mtweet"
-        android:title="@string/Mtweet"
+    <item android:id="@+id/tweet"
+        android:title="@string/tweet"
         android:orderInCategory="100"
         android:showAsAction="never" />
 </menu>
