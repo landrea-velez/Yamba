@@ -11,7 +11,7 @@ public class StatusContract {
 
     // Provider specific constants
     // content://com.marakana.android.yamba.StatusProvider/status
-    public static final String AUTHORITY = "com.marakana.android.yamba.StatusProvider";
+    public static final String AUTHORITY = "yamba.gr4.compumovil.udea.edu.co.yamba2_gr4.StatusProvider";
 
     public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/" + TABLE);
     public static final int STATUS_ITEM = 1;

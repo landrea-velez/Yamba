@@ -17,8 +17,8 @@
         <service android:name=".RefreshService" />
 
         <provider
-            android:name="com.marakana.android.yamba.StatusProvider"
-            android:authorities="com.marakana.android.yamba.StatusProvider"
+            android:name="yamba.gr4.compumovil.udea.edu.co.yamba2_gr4.StatusProvider"
+            android:authorities="yamba.gr4.compumovil.udea.edu.co.yamba2_gr4.StatusProvider"
             android:exported="false" />
 
         <activity
