@@ -17,4 +17,12 @@
         android:layout_weight="1"
         tools:layout="@android:layout/list_content" />
     <!-- -->
- </RelativeLayout>
+    <fragment
+        android:id="@+id/fragment_details"
+        android:name="yamba.gr4.compumovil.udea.edu.co.yamba2_gr4.DetailsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/list_item" />
+
+</RelativeLayout>

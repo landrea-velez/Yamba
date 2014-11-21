@@ -26,7 +26,7 @@ public class TimelineFragment extends ListFragment implements
             StatusContract.Column.CREATED_AT };
     private static final int[] TO = { R.id.list_item_text_user,
             R.id.list_item_text_message, R.id.list_item_text_created_at,
-            R.id.list_item_freshness };
+            };
     private static final int LOADER_ID = 42;
     private SimpleCursorAdapter mAdapter;
     private static final ViewBinder VIEW_BINDER = new ViewBinder() {
@@ -42,18 +42,17 @@ public class TimelineFragment extends ListFragment implements
                             .getRelativeTimeSpanString(timestamp);
                     ((TextView) view).setText(relTime);
                     return true;
-                case R.id.list_item_freshness:
-                    timestamp = cursor.getLong(columnIndex);
-                    ((FreshnessView) view).setTimestamp(timestamp);
-                    return true;
                 default:
                     return false;
             }
         }
     };
+
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        setEmptyText("Loading data...");
+
         mAdapter = new SimpleCursorAdapter(getActivity(), R.layout.list_item,
                 null, FROM, TO, 0);
         mAdapter.setViewBinder(VIEW_BINDER);

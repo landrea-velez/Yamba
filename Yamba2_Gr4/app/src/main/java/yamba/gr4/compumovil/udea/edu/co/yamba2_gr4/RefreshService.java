@@ -51,7 +51,7 @@ public class RefreshService extends IntentService {
             YambaClient cloud = new YambaClient(username, password);
             try {
                 int count = 0;
-                List<Status> timeline = cloud.getTimeline(20);
+                List<Status> timeline = cloud.getTimeline(10);
                 for (Status status : timeline) {
                     values.clear();
                     values.put(StatusContract.Column.ID,
@@ -82,6 +82,7 @@ public class RefreshService extends IntentService {
     public void onDestroy() {
         super.onDestroy();
         Log.d(TAG, "onDestroyed");
+        Toast.makeText(this, "Service Successfully Destroyed", Toast.LENGTH_LONG).show();
     }
 }
 
